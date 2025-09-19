@@ -1,0 +1,6 @@
+cloudscraper
+curl-cffi
+fastapi
+parsel
+random-user-agent
+uvicorn
