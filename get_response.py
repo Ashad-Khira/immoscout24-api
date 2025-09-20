@@ -51,7 +51,7 @@ def request_me(url):
                 scraper = cloudscraper.create_scraper()
                 main_response = scraper.get(url=url).text
                 proxies_dict['CloudScraper'] += 1
-                if '''__INITIAL_STATE__''' in main_response.text and main_response.status_code == 200:
+                if '''__INITIAL_STATE__''' in main_response:
                     response = main_response
                     break
                 else:
